@@ -2,6 +2,15 @@
 import { test, expect, request } from "@playwright/test";
 import { UsersAPI } from "../api/UsersAPI";
 
+test.beforeEach(async ({}, testInfo) => {
+  testInfo.annotations.push(
+    { type: "owner", description: "Christopher" },
+    { type: "severity", description: "critical" },
+    { type: "story", description: "REQRES-1234 - Criação de usuários" },
+    { type: "feature", description: "Users API" }
+  );
+});
+
 test("Create User usando UsersAPI", async () => {
   const requestContext = await request.newContext({
     baseURL: "https://reqres.in",

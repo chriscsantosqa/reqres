@@ -6,7 +6,8 @@
     "test:headed": "playwright test --headed"
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
+    "@playwright/test": "^1.53.1",
+    "allure-playwright": "^3.3.0",
     "typescript": "^5.4.2"
   }
 }

@@ -1,4 +1,12 @@
 import { test, expect } from "@playwright/test";
+test.beforeEach(async ({}, testInfo) => {
+  testInfo.annotations.push(
+    { type: "owner", description: "Christopher" },
+    { type: "severity", description: "critical" },
+    { type: "story", description: "REQRES-1234 - API" },
+    { type: "feature", description: "Users API" }
+  );
+});
 
 test("POST user direto sem baseURL com header de autenticação", async ({
   request,

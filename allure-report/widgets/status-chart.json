@@ -1,0 +1,1 @@
+[{"uid":"3ed0a8184f145b53","name":"POST user direto sem baseURL com header de autenticação","time":{"start":1751167083476,"stop":1751167084013,"duration":537},"status":"passed","severity":"normal"},{"uid":"bc0c286a4168f0a1","name":"Create User usando UsersAPI","time":{"start":1751167083476,"stop":1751167083992,"duration":516},"status":"passed","severity":"normal"}]
